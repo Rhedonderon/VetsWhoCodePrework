@@ -1,0 +1,14 @@
+# OS Specific Files
+.DS_Store
+Thumbs.db
+
+# Potentially app-specific temporary files (if your Android Git app creates any)
+# <YourGitAppName>_cache/
+# <YourGitAppName>_temp/
+# *.backup
+
+# Generic temporary files (if you see them)
+*.log
+*.tmp
+*.temp
+*~
