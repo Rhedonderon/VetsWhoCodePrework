@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Learning Style Survey</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body class="light-mode">
+    <main>
+      <h1 id="title">Learning Survey</h1>
+      <p id="description">This survey is designed to help create a personalized learning experience.</p> <!--Completing the detailed questionnaire will provide highly customized recommendations and features. The quick start survey offers a more generalized experience. Don't worry, you can always update your preferences later!</p>-->
+      <!--<button id="toggle-dark-mode">Toggle Dark Mode</button>-->
+
+      <form id="survey-form">
+        <!--<fieldset>
+          <legend class="h2">Would you like to complete a detailed questionnaire or a shorter version to get started? (required)</legend>
+          <label for="detailed-survey"><input type="radio" name="surveyType" id="detailed-survey" value="detailed" checked/>Detailed Version (10min)</label>
+          <label for="short-survey"><input type="radio" name="surveyType" id="short-survey" value="short"/>Shorter Version (3min)</label>
+        </fieldset></br>-->
+
+        <fieldset>
+          <legend class="h2 center"><b><u>Profile Information</u></b></legend>
+          <label for="name" id="name-label">First Name: <input type="text" id="name" name="name" placeholder="John" required></label>
+          <label for="last-name">Last Name: <input type="text" id="last-name" name="last-name" placeholder="Doe" required/></label>
+          <label for="age" id="number-label">Age: <input type="number" id="number" name="age" min="13" max="120" placeholder="25"/></label>
+          <label for="email" id="email-label">Email: <input type="email" id="email" name="email" placeholder="Johndoe@gmail.com" required/></label>
+          <label for="password">Password: <input type="password" id="password" name="password" pattern="[a-zA-Z0-9_]{8,15}" required/></label>
+          <label for="profile-pic">Profile Picture: (optional)<input type="file" id="profile-pic" name="profile-pic" accept="image/png, image/jpeg"/></label>
+        </fieldset>
+
+        <h2>Learning Preferences</h2>
+        <fieldset>
+          <div class="short question detailed question">
+            <legend>How do you best learn and retain information?</legend>
+              <label for="read-write"><input type="radio" class="inline" id="read-write" name="learning-style" value="read-and-write"?/>Read & Write</label>
+              <label for="auditory"><input type="radio" class="inline"id="auditory" name="learning-style" value="auditory"/>Auditory (Lectures)</label>
+              <label for="visual"><input type="radio" class="inline" id="visual" name="learning-style" value="visual"/>Visually (pictures or videos)</label>
+              <label for="kinesthetic"><input type="radio" class="inline" id="kinesthetic" name="learning-style" value="hands-on"/>Hands-on</label>
+          </div>
+          <div class="detailed question">
+            <legend>What pace of learning suits you best?</legend>
+              <label for="fast"><input type="radio" class="inline" id="fast" name="pace" value="fast"/>Fast</label>
+              <label for="moderate"><input type="radio" class="inline" id="moderate" name="pace" value="moderate"/>Moderate</label>
+              <label for="slow"><input type="radio" class="inline" id="slow" name="pace" value="slow"/>Slow & Steady</label>
+          </div>
+          <div class="detailed question">
+            <legend>Preferred study duration?</legend>
+              <label for="short-time"><input type="radio" id="short-time" name="study-duration" value="short"/>Short (5-10 min)</label>
+              <label for="moderate-time"><input type="radio" id="moderate-time" name="study-duration" value="moderate"/>Moderate (30 min)</label>
+              <label for="long-time"><input type="radio" id="long-time" name="study-duration" value="longer"/>Longer (45 min+)</label>
+          </div>
+          <div class="detailed question">
+            <legend>Preferred study times?</legend>
+              <label for="morning"><input type="radio" id="morning" name="time-of-day" value="mornings"/>Mornings (6AM-10AM)</label>
+              <label for="mid-day"><input type="radio" id="mid-day" name="time-of-day" value="mid-day"/>Mid-day (11AM-2PM)</label>
+              <label for="afternoon-evening"><input type="radio" id="afternoon-evening" name="time-of-day" value="afternoon"/>Afternoon/Evening (2PM-6PM)</label>
+              <label for="night"><input type="radio" id="night" name="time-of-day" value="night"/>Night/Early Morning (7PM-5AM)</label>
+          </div>
+          <div class="detailed question">
+            <legend>How comfortable are you with using technology for studying?</legend>
+              <label for="very-comfortable"><input type="radio" id="very-comfortable" name="comfort-level" value="very-comfortable"/>Very Comfortable</label>
+              <label for="somewhat-comfortable"><input type="radio" id="somewhat-comfortable" name="comfort-level" value="somewhat-comfortable"/>Somewhat Comfortable</label>
+              <label for="need-help"><input type="radio" id="need-help" name="comfort-level" value="need-help"/>I need some help</label>
+              <label for="not-comfortable"><input type="radio" id="not-comfortable" name="comfort-level" value="uncomfortable"/>Not at all comfortable</label>
+          </div>
+        </fieldset>
+
+        <h2 class="detailed question">Time Commitment</h2>
+        <fieldset>
+          <div class="detailed question">
+            <legend>How much time can you dedicate to learning per week?</legend>
+            <label for="time-commitment"><input type="number" id="time-commitment" name="time-commitment"/></label>
+          </div>
+          <div class="detailed question">
+            <legend>Do you prefer a structured schedule or flexibility?</legend>
+              <label for="structured-schedule"><input type="radio" id="structured-schedule" name="schedule" value="structured"/>Structured</label>
+              <label for="flexible"><input type="radio" id="flexible" name="schedule" value="flexible"/>Flexible</label>
+          </div>
+        </fieldset>
+
+        <h2 class="detailed question">Study Habits & Motivation</h2>
+        <fieldset>
+          <div class="detailed question">
+            <legend>What helps you maintain consistency with studying?</legend>
+              <label for="reward"><input type="checkbox" id="reward" name="reward" value="rewards"/>Reward</label>
+              <label for="structure"><input type="checkbox" id="structure" name="structure" value="structure"/>Structure</label>
+              <label for="accountability"><input type="checkbox" id="accountability" name="accountability" value="accountability"/>Accountability</label>
+              <label for="self-discipline"><input type="checkbox" id="self-discipline" name="self-discipline" value="self-discipline"/>Self-discipline</label>
+              <label for="other"><input type="checkbox" id="other" class="otherOption" name="other-textarea1" value="other"/>Other</label>
+          </div>
+          <!-- Hidden Textarea -->
+          <div class="commentBox"> <!--style="display: none;">-->
+            <label for="otherComment1">Please Specify: </label>
+            <textarea class="other" name="otherComment1" rows="4" cols="30" placeholder="I stay consistent by..."></textarea>
+          </div>
+          <div class="detailed question">
+            <legend>What type of rewards would you find most motivating for meeting your goals?</legend>
+              <label for="internal"><input type="radio" id="internal" name="motivate" value="internal"/>Internal (Free Access to Premium Features)</label>
+              <label for="external"><input type="radio" id="external" name="motivate" value="external"/>External (Discounts, gift card, etc)</label>
+          </div>
+          <div class="detailed question">
+            <legend>Do you prefer to learn alone or collaboratively?</legend>
+              <label for="group-learning"><input type="radio" id="group-learning" name="learning-type" value="collaboratively"/>Collaboratively</label>
+              <label for="solo-learning"><input type="radio" id="solo-learning" name="learning-type" value="solo"/>Solo</label>
+          </div>
+        </fieldset>
+
+        <h2 class="detailed question">Challenges & Barriers</h2>
+        <fieldset>
+          <div class="detailed question">
+            <legend>What barriers do you have for learning and studying?</legend>
+              <label for="limited-resources"><input type="checkbox" id="limited-resources" name="limited-resources" value="limited-resources"/>Limited Time & Resources</label>
+              <label for="disability"><input type="checkbox" id="disability" name="disability" value="disability"/>Disability or Health Issues</label>
+              <label for="low-motivation"><input type="checkbox" id="low-motivation" name="low-motivation" value="low-motivation"/>Lack of Motivation/Confidence</label>
+              <label for="understanding"><input type="checkbox" id="understanding" name="understanding" value="difficulty-understanding"/>Difficulty Understanding/Remembering Material</label>
+              <label for="language-gap"><input type="checkbox" id="language-gap" name="language-gap" value="language-gap"/>Language Barriers</label>
+              <label for="other-reason"><input type="checkbox" class="otherOption" id="other-reason" name="other-textarea2" value="other"/>Other</label>
+          </div>
+          <!-- Hidden Textarea -->
+          <div class="commentBox"> <!--style="display: none;">-->
+            <label for="otherComment2">Please Specify: </label>
+            <textarea class="other" name="otherComment2" rows="4" cols="30" placeholder="I struggle with..."></textarea>
+          </div>
+          <div class="detailed question">
+            <legend>What would help you become even more effective in reaching your learning goals?</legend>
+              <label for="time-management"><input type="checkbox" id="time-management" name="time-management" value="time-management"/>Time Management</label>
+              <label for="support"><input type="checkbox" id="support" name="support" value="support"/>Support</label>
+              <label for="group-act"><input type="checkbox" id="group-act" name="group-act" value="group-act"/>Group/Accountability</label>
+              <label for="accessibility"><input type="checkbox" id="accessibility" name="accessibility" value="accessibility"/>Accessibility to Tools</label>
+              <label for="other1"><input type="checkbox" id="other1" class="otherOption" name="other-textarea3" value="other"/>Other</label>
+          </div>
+          <!-- Hidden Textarea -->
+          <div class="commentBox"> <!--style="display: none;">-->
+            <label for="otherComment3">Please Specify: </label>
+            <textarea class="other" name="otherComment3" rows="4" cols="30" placeholder="... will help me reach my learning goals."></textarea>
+          </div>
+        </fieldset>
+
+        <h2>Personalization</h2>
+        <fieldset>
+          <div class="short question detailed question">
+            <legend class="center"></legend>
+            <label for="dropdown">Themes</label>
+            <select id="dropdown" name="dropdown">
+              <option value="dark-mode">Dark Mode</option>
+              <option value="light-mode">Light Mode</option>
+              <option value="calm">Calm and Relaxing</option>
+              <option value="energetic">Energetic</option>
+            </select>
+          </div>
+          <div class="detailed question">
+            <legend>Would you like recommendations for resources, such as books, articles, or videos on studying and building effective habits?</legend>
+              <label for="y"><input type="radio" id="y" name="recommendations" value="yes"/>Yes</label>
+              <label for="n"><input type="radio" id="n" name="recommendations" value="no"/>No</label>
+          </div>
+          <div class="detailed question">
+            <legend>What types of resources and recommendations would you like to receive?</legend>
+              <label for="book"><input type="checkbox" id="book" name="book" value="book"/>Books</label>
+              <label for="video"><input type="checkbox" id="video" name="video" value="videos"/>Videos</label>
+              <label for="article"><input type="checkbox" id="article" name="article" value="articles"/>Articles</label>
+              <label for="email-newsletter"><input type="checkbox" id="email-newsletter" name="emails" value="emails"/>Emails</label>
+          </div>
+          <div class="detailed question">
+            <legend>How often would you like reminders or progress updates?</legend>
+              <label for="daily"><input type="radio" id=daily" name="reminders-and-updates" value="daily"/>Daily</label>
+              <label for="weekly"><input type="radio" id="weekly" name="reminders-and-updates" value="weekly"/>Weekly</label>
+              <label for="never"><input type="radio" id="never" name="reminders-and-updates" value="never"/>Never</label>
+          </div>
+          <div class="detailed question">
+            <legend>Would you like motivational messages or milestone celebrations?</legend>
+              <label for="yes"><input type="radio" id="yes" name="question" value="yes"/>Yes</label>
+              <label for="no"><input type="radio" id="no" name="question" value="no"/>No</label>
+          </div>
+          <div class="detailed question">
+            <legend>Do you have any accessibility needs?</legend>
+              <label for="fonts"><input type="checkbox" id="fonts" name="fonts" value="fonts"/>Larger Fonts</label>
+              <label for="audio"><input type="checkbox" id="audio" name="audio" value="audio"/>Audio Descriptions</label>
+              <label for="none"><input type="checkbox" id="none" name="none" value="none"/>None</label>
+              <label for="other2"><input type="checkbox" id="other2" class="otherOption" name="other-textarea4" value="other"/>Other</label>
+          </div>
+          <!-- Hidden Textarea -->
+          <div class="commentBox"> <!--style="display: none;">-->
+            <label for="otherComment4">Please Specify: </label>
+            <textarea class="other" name="otherComment4" rows="4" cols="30" placeholder="My need for accessibility can be met by..."></textarea>
+          </div>
+        </fieldset>
+
+        <h2>Additional Features</h2>
+        <fieldset>
+          <div class="short question detailed question">
+            <legend>What features would you find useful?</legend>
+            <label for="pomodoro"><input type="checkbox" id="pomodoro" name="pomodoro" value="pomodro"/>Pomodoro Timer</label>
+            <label for="block"><input type="checkbox" id="block" name="block" value="block"/>Block Apps & Notifications</label>
+            <label for="streak"><input type="checkbox" id="streak" name="streak" value="streak"/>Streaks</label>
+            <label for="reward-features"><input type="checkbox" id="reward-features" name="reward-features" value="rewards"/>Rewards</label>
+            <label for="reminders"><input type="checkbox" id="reminders" name="reminders" value="reminders"/>Study Reminders</label>
+          </div>
+        </fieldset>
+
+        <h2 class="detailed question">Purpose & Goals</h2>
+        <fieldset>
+          <div class="detailed question">
+            <legend> </legend>
+            <label for="challenges">What do you most likely do when you face challenges or setbacks?</label>
+            <select class="otherOption" id="challenges" name="challenges">
+              <option value="discourage">Get Discouraged</option>
+              <option value="persevere">Push through and try harder</option>
+              <option value="reassess">Reasses & Reevaluate</option>
+              <option value="break">Take a break & return</option>
+              <option value="help">Seek help</option>
+              <option value="other" name="other-textarea5">Other</option>
+            </select>
+          </div>
+          <!-- Hidden Textarea -->
+          <div class="commentBox"> <!--style="display: none;">-->
+            <label for="otherComment5">Please Specify: </label>
+            <textarea class="other" name="otherComment5" rows="4" cols="30" placeholder="When I face challenges or setbacks I..."></textarea>
+          </div>
+          <div class="detailed question">
+            <legend for="subject">What category are you studying?</legend>
+            <label> </label>
+            <select class="otherOption" id="subject" name="subject">
+              <option value="language">Language</option>
+              <option value="tech">Technology</option>
+              <option value="history">History / Social Science</option>
+              <option value="math">Mathmatics</option>
+              <option value="creative">Art/Music/Theater</option>
+              <option value="science">Science</option>
+              <option value="buisness">Buisness</option>
+              <option value="communication">Communication</option>
+              <option value="healtgcare">Health Care</option>
+              <option value="multiple">Multiple</option>
+              <option value="other" value="other" name="other-textarea6">other</option>
+            </select>
+          </div>
+          <!-- Hidden Textarea -->
+          <div class="commentBox"> <!--style="display: none;">-->
+            <label for="otherComment6">Please Specify: </label>
+            <textarea class="other" name="otherComment6" rows="4" cols="30" placeholder="I am studying..."></textarea>
+          </div>
+          <div class="detailed question">
+            <legend>What is your main reason for studying?</legend>
+            <select class="otherOption">
+              <option value="pass">To pass a class</option>
+              <option value="grades">To get good grades</option>
+              <option value="degree">Earning a degree</option>
+              <option value="scholarship">Scholarship</option>
+              <option value="Self-improvement">Self-improvement</option>
+              <option value="professional">Professional Development</option>
+              <option value="mind">Keep mind active</option>
+              <option value="career-change">Career Change</option>
+              <option value="other" name="other-textarea7">Other</option>
+            </select>
+          </div>
+          <!-- Hidden Textarea -->
+          <div class="commentBox"> <!--style="display: none;"-->
+            <label for="otherComment7">Please Specify: </label>
+            <textarea class="other" name="otherComment7" rows="4" cols="30" max="200" placeholder="I study because... max 200 characters"></textarea>
+          </div>
+        </fieldset>
+        
+        <h2 class="detailed question">Comments</h2> 
+        <fieldset>
+          <div class="detailed question">
+            <legend>The questions above didn't address something? Tell us about it here: </legend>
+            <label for="comments">
+              <textarea placeholder="Any additional information you'd like to share. Comments, questions, or concerns. " id="comments" name="comments" rows="5" cols="30"></textarea>
+            </label>
+          </div>
+        </fieldset>
+
+        <legend class="h2 center">Terms & Conditions</legend>
+        <label for="terms-and-conditions" class="terms-and-conditions"><input type="checkbox" id="terms-and-conditions" name="terms-and-conditions" value="checked" required/> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service">terms and conditions</a></label>
+        <input type="submit" id="submit" value="submit"/>  
+      </form>
+    </main>
+    <script>
+<!--Dark mode/Light mode button-->
+<!--document.getElementById('toggle-dark-mode').addEventListener('click', () => {
+  const body = document.body;
+    if (body.classList.contains('light-mode')) {
+        body.classList.replace('light-mode', 'dark-mode');
+    } else {
+        body.classList.replace('dark-mode', 'light-mode');
+    }
+});-->
+
+<!--Detailed/short survey questions-->
+
+<!--document.addEventListener("DOMContentLoaded", () => {
+  const surveyTypeRadios = document.querySelectorAll('input[name="surveyType"]');
+  const questions = document.querySelectorAll(".question");
+
+  surveyTypeRadios.forEach((radio) => {
+    radio.addEventListener("change", (event) => {
+      const selectedType = event.target.value;
+
+      questions.forEach((question) => {
+        if (question.classList.contains(selectedType)) {
+          question.style.display = "block";
+        } else {
+          question.style.display = "none";
+        }
+      });
+    });
+  });
+});-->
+
+<!--Other select comment box-->
+<!--document.addEventListener('DOMContentLoaded', () => {
+  const checkbox = document.querySelectorAll('.otherOption');
+  const commentBox = document.querySelectorAll('.commentBox');
+
+  checkbox.forEach((checkbox, index) => {
+    const correspondingCommentBox = commentBox[index];
+
+    checkbox.addEventListener('change', () => {
+      correspondingCommentBox.style.display = checkbox.value === 'other' ? 'block' : 'none';
+
+    });
+  });
+});-->
+
+<!-- comment box -->
+
+<!--document.addEventListener('DOMContentLoaded', () => {
+  const triggers = document.querySelectorAll('.otherOption');
+  const commentBoxes = document.querySelectorAll('.commentBox');
+
+  triggers.forEach((trigger, index) => {
+    const correspondingCommentBox = commentBoxes[index];-->
+
+  <!--  // Add event listeners for checkboxes and dropdowns-->
+
+   <!-- if (trigger.type === 'checkbox') {
+      trigger.addEventListener('change', () => {
+        correspondingCommentBox.style.display = trigger.checked ? 'block' : 'none';
+      });
+    } else if (trigger.tagName.toLowerCase() === 'select') {
+      trigger.addEventListener('change', () => {
+        correspondingCommentBox.style.display = trigger.value === 'other' ? 'block' : 'none';
+      });
+    });
+  });
+});-->
+    </script>
+  </body>
+</html>
