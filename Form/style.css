@@ -1,8 +1,5 @@
 body {
-  /*background-color: #110;*/
-  /*color: #ddd;*/
   width: 100%;
-  /*height: 100vh;*/
   min-height: 100vh;
   margin: 0;
   padding: 0;
@@ -10,112 +7,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  /*background-size: cover;*/
-  /*background-repeat: no-repeat;*/
-  /*background: linear-gradient(to bottom, color(black), color(grey));*/
-  /*transition: background-color 0.3s ease, color 0.3s ease;*/
 }
 
-/* dark-mode and light-mode start*/
-
-body, textarea, button, h2, input, select, a, #dropdown {
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.light-mode {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.85), rgba(200, 200, 200, 0.95));
-}
-
-.light-mode button {
-  background-color: #fff;
-  border: solid 1px #333;
-}
-
-.light-mode textarea {
-  background-color: #ddd;
-  border: solid 1px #333;
-  color: #333;
-}
-
-.light-mode h2 {
-  border-color: #333;
-}
-
-.light-mode input[type="text"], .light-mode input[type="number"], .light-mode input[type="email"], .light-mode input[type="password"] {
-  background-color: #ddd;
-  color: #333;
-  border: none;
-}
-
-.light-mode select {
-  background-color: #bbb;
-  color: #333;
-  border: none;
-}
-
-.light-mode #dropdown {
-  background-color: #ccc;
-}
-
-.light-mode input[type="submit"] {
-  background-color: #333;
-}
-
-.light-mode a {
-  color: blue; 
-}
-
-.dark-mode {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.95));
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #ddd;
-}
-
-.dark-mode button {
-  border: solid 1px #ddd;
-}
-
-.dark-mode h2 {
-  background-color: #333;
-}
-
-.dark-mode a {
-  color: orange;
-}
-
-.dark-mode input[type="number"], .dark-mode input[type="text"], .dark-mode input[type="email"], .dark-mode input[type="password"], .dark-mode input[type="submit"] {
-  background-color: #333;
-  color: #ddd;
-}
-
-.dark-mode select {
-  background-color: #333;
-  color: #ddd;
-}
-
-.dark-mode textarea {
-  background-color: #333;
-  color: #ddd;
-}
-
-/* dark-mode and light-mode end*/
-
-/* short and detailed survey start*/
-/*.question {
-  display: none;
-  transition: all 0.3s ease-in-out;
-}*/
-
-/*.question.show {
-  display: block;
-}*/
-
-/* short and detailed survey end*/
-
-/* other option comment box start*/
-
-/* other option comment box end */
+/* TODO dark-mode and light-mode */
+/* TODO Dynamic Form Questions */
 
 button {
   padding: 10px;
@@ -162,7 +57,6 @@ form {
 }
 
 legend {
-  /*background-color: #333;*/
   width: 100%;
   padding: 10px;
   border-radius: 15px;
@@ -188,7 +82,6 @@ a {
 
 input[type="text"], input[type="email"], input[type="password"] {
   width: 100%;
-  /*background-color: #333;*/
   color: #ddd;
   padding: 10px;
   border-radius: 15px;
@@ -198,7 +91,6 @@ input[type="text"], input[type="email"], input[type="password"] {
 }
 
 input[type="number"] {
-  /*background-color: #333;*/
   color: #ddd;
   padding: 10px;
   border: solid 1px #ddd;
@@ -216,7 +108,6 @@ input[type="file"] {
 }
 
 select {
-  /*background-color: #333;*/
   color: #ddd;
   padding: 10px;
   border-radius: 15px;
@@ -227,7 +118,6 @@ select {
 
 input[type="submit"] {
   border: solid 1px #ddd;
-  /*background-color: #333;*/
   color: #ddd;
   width: 60%;
   padding: 10px;
@@ -250,7 +140,6 @@ textarea {
   border-radius: 15px;
   border: solid 1px #ddd;
   color: #ddd;
-  /*background-color: #333;*/
 }
 
 .terms-and-conditions {
