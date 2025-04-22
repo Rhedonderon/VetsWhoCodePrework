@@ -442,35 +442,7 @@ blockqoute {
   }
 }
 
-/* QUIZ 
-.question {
-  display: flex;
-  margin: 0 auto;
-  display: block;
-  padding: 10px 20px;
-}
-
-.question label {
-  display: inline-block;
-  line-height: 1.4;
-  padding: 0 15px;
-}
-
-.question legend {
-  padding: 10px 0;
-}
-
-fieldset {
-  border: none;
-}
-
-label {
- display: inline-block;
-}
-
-.hidden {
- display: none;
-}*/
+/* TODO QUIZ 
 
 /* FOOTER & RESOURCES */
 footer {
