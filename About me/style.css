@@ -91,8 +91,6 @@ h4 {
 }
 
 /* TRIGGERS & DROPDOWNS */
-
-/* Your CSS code here */
 .dropdown-content {
   display: none;
 }
@@ -110,17 +108,11 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    /* position: relative; to stack images*/
-    /*background-color: peachpuff;*/
-    /*background-image: url('/Untitled (Desktop Wallpaper)_20250320_195216_0001.png');*/
-    /*background-image: url('/Untitled (Desktop Wallpaper)_20250320_195137_0004.png');*/
-    /*background-image: url('/Untitled (Desktop Wallpaper)_20250320_195137_0003.png');*/
     background-image: url('/Star.png'), url('/Night_Forest_Stars.png');
     background-size: auto, cover;
     background-position: top -22% left 32%, center;
     background-repeat: no-repeat, no-repeat;
     background-attachment: fixed, fixed;
-    /* animation: pulsate-star 3s infinite, none;*/
 }
 
 .content-wrap {
@@ -133,94 +125,15 @@ body {
   display: block;
 }
 
-@keyframes pulsate-star {
-  0% { opacity: 1; transform: scale(0.2); }
-  50% { opacity: 1; transform: scale(1.1) rotate(15deg); }
-  100% { opacity: 0.8; transform: scale(1.0); }
-}
-
-/* @keyframes star {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.1) rotate(25deg)}
-}*/
+/* TODO Pulsating Star */
+/* TODO Whisp */
 
 main {
   margin: 0 25px;
   width: 100%;
   flex-grow: 1;/*content takes up available space*/
   padding-bottom: 100px;
-  /*position: relative;*/
 }
-
-/* WHISP */
-/*.whisp-container {*/
-  /*z-index: 20;*/
-/*  position: fixed;
-  top: 60%;
-  left: 102%;
-  width: 100vw;
-  display: block;
-  height: 100vh;
-  transform: translate(-50%, -50%);
-}*/
-
-/*.whisp {
-  width: 100%;
-  height: auto;
-  animation: pulsate 3s infinite ease-in-out;
-}*/
-
-/*@keyframes pulsate {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.1) rotate(25deg)}
-}*/
-
-/*.speech-tail {
-  position: absolute;
-  width: 10px;
-  height: 15px;
-  background-color: rgba(255, 255, 255, 0.7);
-  clip-path: polygon(0 0, 100% 50%, 0 100% ); *//*makes shape for tail of speech bubble*/
- /* top: 5vh;
-  left: vh;
-  transform: translateX(-50);
-  opacity: 0;*/ /*makes initially invisible*/
-  /*transition: opacity 3s ease-in-out;*/
-/*}*/
-
-/*.speech-box {
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.7);
-  padding: 10px;
-  min-width: 231px;
-  max-width: 231px;
-  min-height: 25px;
-  border-radius: 5px;
-  opacity: 0;
-  transition: opacity 3s ease-in-out;
-  white-space: wrap;
-  left: -22%;
-  top: 9%;
-}*/
-
-/*.whisp-container.speaking .speech-tail .whisp-container{
-  opacity: 1;*/ /*shows tail of speech bubble when speaking*/
-/*}*/
-
-/*.whisp-input {
-  position: absolute;
-  top: 10vh;
-  left: 30%;
-  background-color: rgba(225, 225, 225, 0);
-  color: aliceblue;
-  height: 5vh;
-  width: 50vw;
-  font-size: 2em;
-  padding: 10px;
-  border: solid lightblue 1px;
-  border-radius: 10px;
-  color: aliceblue;
-}*/
 
 p {
   text-indent: 2em
@@ -259,20 +172,16 @@ p {
 
 /*GALLERY*/
 #gallery {
-  /*display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;*/
   justify-content: center;
   align-items: center;
   gap: 16px;
-  /*max-width: 1400px;*/
   margin: 0 auto;
   padding: 20px 0 40px 0;
 }
 
 .x {
   /*border: 5px solid white;
-  display: flex;*/ /* toggles alignment of gallery header instead of dropdown.*/
+  display: flex;*/ /* toggles alignment of gallery header instead of dropdown?*/
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
@@ -288,36 +197,20 @@ p {
 }
 
 .img-container {
-  /*grid-template-rows: 1fr 1fr;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;*/
-  /*max-width: 1400px;
-  padding: 10px 20px 20px 20px;*/
   flex-shrink: 0;
 }
 
 .img-container img {
-  /*width: 100%;
-  width: 200px;*/
   height: 250px;
   object-fit: cover;
   border-radius: 10px;
   max-width: 100%;
   width: 200px;
-  /*height: auto;*/
 }
 
 .horizontal-scroll {
-  /*display: flex;
-  align-items: center;
-  width: 100%;
-  position: relative;*/
   overflow-x: auto;
   white-space: nowrap;
-  /*min-width: 1300px;*/
 }
 
 .horizontal-scroll .content {
@@ -325,10 +218,6 @@ p {
   flex-direction: row;
   gap: 5px;
   width: 1300px;
-  /*transition: transform 0.3s ease;
-  overflow-x: auto;*/ /*allow scrolling if buttons don't work*/
-  /*width: auto;
-  scroll-behavior: smooth;*/
   white-space: nowrap;
 }
 
@@ -341,36 +230,16 @@ p {
   flex-direction: row;
 }
 
-/*.scroll-left .scroll-right {
-  position: absolute;
-  transform: translateY(-50);
-  cursor: pointer;
-  z-index: 10;
-  border: none;
-  padding: 10px;
-}*/
-
 .grid-container button {
-  /*text-align: center;*/
   font-size: 3rem;
   border-radius: 5px;
-  /*align-self: center;*/
   color: indianred;
   border: 1px solid aliceblue;
   background-color: rgba(0, 0, 0, 0);
   padding: 0;
   width: 1.5em;
   height: 4.5em;
-  /*display: inline-block;*/
 }
-
-/*.scroll-left {
-  left: 8px;
-}
-
-.scroll-right {
-  right: 8px;
-}*/
 
 /* QUOTE GAME */
 cite {
@@ -384,7 +253,6 @@ q {
   /* book game qoutes */
   font-style: italic;
   font-family: "Merriweather", serif;
-  /* Playfair Display Make sure you are properly linking the fonts you choose in your CSS (e.g., using Google Fonts or Adobe Fonts).*/
 }
 
 span {
@@ -407,10 +275,6 @@ span {
   grid-column: 1;
   text-align: center;
   margin: 0 auto;
-}
-
-.quote-slide {
-  /* holds all quote answer pairs */
 }
 
 #subcat_item-6 {
@@ -450,10 +314,6 @@ span {
   width: auto;
 }
 
-.book-quote {
-  
-}
-
 .right-page {
   position: relative;
   display: grid;
@@ -476,21 +336,13 @@ span {
 .quote-slide {
   grid-row: 1;
   grid-column: 1;
-  /*opacity: 0;/*initially hides everything*/
   transition: opacity 0.3s ease-in-out;
-  /*z-index: 0;
-  /*stack everything behind as a default*/
   display: none;
 }
 
 .quote-slide:first-child {
   display: block;
 }
-
-/*.quote-slide.active {
-  opacity: 1;
-  z-index: 1;/*bring active elements to the front*//*
-}*/
 
 .next-button {
   cursor:pointer;
@@ -575,17 +427,15 @@ span {
     font-size: 0.5em;
   }
 }
+
 /* FOOTER */
 footer {
   margin: 0;
   padding: 0;
   text-align: center;
-  /*position: absolute;*/
-  /*background-color: #333333;*/
   background-image: url('/footer3.png');
   background-size: cover;
   background-repeat: no-repeat;
-  /*background: linear-gradient(to bottom, #3A3A28, #091418);  Apply a gradient */
   background: linear-gradient(to bottom, #073638, #01030f);
   -webkit-mask-image: url('/footer3.png');
     mask-image: url('/footer3.png');
@@ -625,11 +475,6 @@ footer nav a {
 footer nav a img {
   height: 1.5em;
   bottom: 0;
-}
-
-/* toggle color example */
-.red {
-  color: red;
 }
 
 @media screen and (max-width: 600px) {
