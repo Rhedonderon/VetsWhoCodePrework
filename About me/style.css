@@ -161,13 +161,22 @@ p {
   padding: 20px 10px;
 }
 
-#form a, #tribute a {
+#form h3, #tribute h3 {
   text-align: center;
   color: aliceblue;
   width: 100%;
   display: inline-block;
   font-size: 1.8em;
   font-weight: bold;
+  text-decoration: underline;
+}
+
+#form a, #tribute a {
+  color: aliceblue;
+  font-weight: bold;
+  text-decoration: underline;
+  display: block;
+  text-align: center;
 }
 
 /*GALLERY*/
