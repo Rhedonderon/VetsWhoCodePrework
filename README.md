@@ -16,7 +16,8 @@ This repository is organized into the following directories, each representing a
 
 * **Description:** A small web page project used for an application to the Vets Who Code program and it is intended to introduce myself and show my personality. This project demonstrates my ability to create interactive elements and a unique user experience through HTML, CSS, and JavaScript.
 * **Key Features:** Multi-tiered dropdown menu, a gallery, and a book quotes game.
-* **Link:** https://github.com/Rhedonderon/Project/tree/main/About%20me
+* **Files:** https://github.com/Rhedonderon/Project/tree/main/docs/About%20me
+* **Link:** https://rhedonderon.github.io/Project/About%20me/
 
 ### Grace Hopper Tribute Page
 
