@@ -288,7 +288,7 @@ span {
 
 #subcat_item-6 {
   /* all content for quotes */
-  background-image: url('/Book2.png');
+  background-image: url('Book2.png');
   height: 40vh;
   font-size: 0.8em;
   background-size: contain;
@@ -442,12 +442,12 @@ footer {
   margin: 0;
   padding: 0;
   text-align: center;
-  background-image: url('/footer3.png');
+  background-image: url('footer3.png');
   background-size: cover;
   background-repeat: no-repeat;
   background: linear-gradient(to bottom, #073638, #01030f);
-  -webkit-mask-image: url('/footer3.png');
-    mask-image: url('/footer3.png');
+  -webkit-mask-image: url('footer3.png');
+    mask-image: url('footer3.png');
   -webkit-mask-size: 100%;
     mask-size: 100%;
   -webkit-mask-repeat: no-repeat;
