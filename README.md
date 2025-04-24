@@ -29,7 +29,8 @@ This repository is organized into the following directories, each representing a
 
 * **Description:** I chose to model the web form project as an intake form for a fictional educational application because it offered the creative flexibility and freedom to design the questions and form elements in a way that best demonstrated my understanding of user input and interface design. This approach allowed me to envision practical applications of web forms. While this version showcases fundamental form structures and validation, I see it as an evolving project and a foundation upon which I intend to build more advanced web development skills within the Vets Who Code program.
 * **Key Features:** Basic HTML5 form validation, and a gradient background.
-* **Link:** https://github.com/Rhedonderon/Project/tree/main/Form
+* **Files:** https://github.com/Rhedonderon/Project/tree/main/docs/Form
+* **Link:** https://rhedonderon.github.io/Project/Form/
 
 ## Technologies Used
 
