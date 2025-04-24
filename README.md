@@ -23,7 +23,9 @@ This repository is organized into the following directories, each representing a
 
 * **Description:** I chose to dedicate my tribute page to Rear Admiral Grace Hopper because I was deeply impressed by her life, her monumental achievements in computer science, and the enduring impact she continues to have on our modern digital world. Surprisingly, I realized I knew very little about this remarkable woman and don't recall ever learning about her in my formal education. Creating this responsive tribute page became an opportunity not only to fulfill the FreeCodeCamp curriculum requirement, but also to personally learn more about her inspiring story and a significant part of computing history.
 * **Key Features:** A historical timeline of Grace Hopper's life and some major world events during her lifetime. A gallery of pictures with Grace Hopper featuring quotes from her.
-* **Link:** https://github.com/Rhedonderon/Project/tree/main/Grace%20Hopper%20Tribute
+* **Files:** https://github.com/Rhedonderon/Project/tree/main/docs/Grace%20Hopper%20Tribute
+* **Link:** https://rhedonderon.github.io/Project/Grace%20Hopper%20Tribute/
+
 
 ### Web Form Project
 
