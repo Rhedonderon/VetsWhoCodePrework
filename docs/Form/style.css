@@ -8,6 +8,49 @@ body {
   justify-content: center;
 }
 
+.light-mode {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.85), rgba(200, 200, 200, 0.95));
+}
+
+.light-mode button {
+  background-color: #fff;
+  border: solid 1px #333;
+}
+
+.light-mode textarea {
+  background-color: #ddd;
+  border: solid 1px #333;
+  color: #333;
+}
+
+.light-mode h2 {
+  border-color: #333;
+}
+
+.light-mode input[type="text"], .light-mode input[type="number"], .light-mode input[type="email"], .light-mode input[type="password"] {
+  background-color: #ddd;
+  color: #333;
+  border: none;
+}
+
+.light-mode select {
+  background-color: #bbb;
+  color: #333;
+  border: none;
+}
+
+.light-mode #dropdown {
+  background-color: #ccc;
+}
+
+.light-mode input[type="submit"] {
+  background-color: #333;
+}
+
+.light-mode a {
+  color: blue; 
+}
+
 /* TODO dark-mode and light-mode */
 /* TODO Dynamic Form Questions */
 
