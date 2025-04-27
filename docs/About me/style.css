@@ -289,9 +289,8 @@ span {
 #subcat_item-6 {
   /* all content for quotes */
   background-image: url('Book2.png');
-  height: 40vh;
   font-size: 0.8em;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
 }
