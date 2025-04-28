@@ -390,12 +390,12 @@ blockqoute {
 }
 
 #timeline .left .content{
-  background-image: url('/circit.png');
+  background-image: url('circit.png');
   background-size: cover;
 }
 
 #timeline .right .content {
-  background-image: url('/map.png');
+  background-image: url('map.png');
   background-size: cover;
   background-position: bottom 75% center;
   width: 75%;
