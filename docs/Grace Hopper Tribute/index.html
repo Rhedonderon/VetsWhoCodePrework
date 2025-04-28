@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Project Tribute page about Grace Hopper" />
     <link rel="stylesheet" href="style.css">
-    <title id="title">Grace Harper</title>
+    <title id="title">Grace Hopper</title>
   </head>
 
   <body>
@@ -30,7 +30,7 @@
     <main id="main">
       <section id="intro">
         <h2>Introduction</h2>
-        <p>Grace Brewster Murray Hopper (1906–1992) was a computer scientist, mathematician, and one of the few women at the time to reach the rank of Rear Admiral in the Navy. She is celebrated even today for her unique and significant contributions to the field of computer science.</p>
+        <p>Grace Brewster Murray Hopper <time>(1906–1992)</time> was a computer scientist, mathematician, and one of the few women at the time to reach the rank of Rear Admiral in the Navy. She is celebrated even today for her unique and significant contributions to the field of computer science.</p>
       </section>
       
       <section id="interesting-facts">
@@ -112,7 +112,7 @@
         <div class="container left">
           <div class="content">
             <h3>1906</h3>
-            <p>Grace Brewster Murray Hopper was born on December 9, 1906, in New York City.</p>
+            <p>Grace Brewster Murray Hopper was born on <time datetime="1906-12-09">December 9, 1906</time>, in New York City.</p>
           </div>
         </div>
         <div class="container right">
@@ -335,7 +335,7 @@
         <div class="container left">
           <div class="content">
             <h3>1991</h3>
-            <p>Grace Hopper passed away on January 1, at 85 years old. Her contributions continues to influence computer science and programming leaving behind an impressive legacy.
+            <p>Grace Hopper passed away on <time datetime="1991-01-01">January 1, 1991</time> at 85 years old. Her contributions continues to influence computer science and programming leaving behind an impressive legacy.
             </p>
             <p>National Medal of Technology.</p>
             <p>The Gulf War end.</p>
@@ -382,7 +382,7 @@
 /* HORIZONTAL SCROLL WITH BUTTONS START */
 document.querySelector('.scroll-left').addEventListener('click', function() {
   document.querySelector('.content').scrollBy({
-    left: -350, <!--// Adjust this value based on item width-->
+    left: -350, // Adjust this value based on item width
     behavior: 'smooth',
   });
 });
