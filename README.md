@@ -1,4 +1,4 @@
-# Vets Who Code Application Portfolio - Rebecca Rodriguez
+# Vets Who Code Application
 
 This repository showcases my web development projects created in support of my application to the Vets Who Code program. It includes an "About Me" webpage highlighting my personality and skills, a tribute page dedicated to the inspiring Grace Hopper, and a foundational web form project. I am eager to demonstrate my passion for learning and my commitment to developing a career in technology through these projects.
 
@@ -22,7 +22,7 @@ This repository is organized into the following directories, each representing a
 ### Grace Hopper Tribute Page
 
 * **Description:** I chose to dedicate my tribute page to Rear Admiral Grace Hopper because I was deeply impressed by her life, her monumental achievements in computer science, and the enduring impact she continues to have on our modern digital world. Surprisingly, I realized I knew very little about this remarkable woman and don't recall ever learning about her in my formal education. Creating this responsive tribute page became an opportunity not only to fulfill the FreeCodeCamp curriculum requirement, but also to personally learn more about her inspiring story and a significant part of computing history.
-* **Key Features:** A historical timeline of Grace Hopper's life and some major world events during her lifetime. A gallery of pictures with Grace Hopper featuring quotes from her.
+* **Key Features:** A historical timeline of Grace Hopper's life and some major events during her lifetime. A gallery of pictures with Grace Hopper featuring quotes from her.
 * **Files:** https://github.com/Rhedonderon/VetsWhoCodePrework/tree/main/docs/Grace%20Hopper%20Tribute
 * **Link:** https://rhedonderon.github.io/VetsWhoCodePrework/Grace%20Hopper%20Tribute/
 
@@ -30,7 +30,7 @@ This repository is organized into the following directories, each representing a
 ### Web Form Project
 
 * **Description:** I chose to model the web form project as an intake form for a fictional educational application because it offered the creative flexibility and freedom to design the questions and form elements in a way that best demonstrated my understanding of user input and interface design. This approach allowed me to envision practical applications of web forms. While this version showcases fundamental form structures and validation, I see it as an evolving project and a foundation upon which I intend to build more advanced web development skills within the Vets Who Code program.
-* **Key Features:** Basic HTML5 form validation, and a gradient background.
+* **Key Feature:** Basic HTML5 form validation.
 * **Files:** https://github.com/Rhedonderon/VetsWhoCodePrework/tree/main/docs/Form
 * **Link:** https://rhedonderon.github.io/VetsWhoCodePrework/Form/
 
@@ -43,6 +43,10 @@ This repository is organized into the following directories, each representing a
 ## Usage
 
 To view each project, feel free to explore the live demos linked above or navigate to its respective folder within this repository and open the main HTML file (`index.html`) in your web browser.
+
+## Known Issues
+
+* There is a visual anomaly where header sizes within the multi-tiered dropdown menu on the "About Me" page appear larger when certain sections are clicked in the GitHub Desktop profile view on a mobile device. This issue did not manifest during local development on a laptop and requires further investigation.
 
 ## Author
 
