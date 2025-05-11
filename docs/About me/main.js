@@ -1,17 +1,17 @@
 /* Q&A Dropdown */
 function toggleDropdown(dataValue) {
-  // 1. Identify the target dropdown element based on the data-value.
+  // Identify the target dropdown element based on the data-value.
   const dropdown = document.querySelector(`[data-dropdown="${dataValue}"]`);
 
-  // 2. Identify the corresponding button or trigger element (if you have one).
+  // Identify the corresponding button or trigger element (if you have one).
   const trigger = document.querySelector(`[data-toggle="${dataValue}"]`); // Assuming a data-toggle attribute
 
   if (dropdown && trigger) {
-    // 3. Toggle the 'active' class (or a similar class that controls visibility).
+    // Toggle the 'active' class (or a similar class that controls visibility).
     dropdown.classList.toggle('active');
-    trigger.classList.toggle('active'); // Optionally toggle the button state as well
+    trigger.classList.toggle('active'); // Toggle the button state as well
 
-    // 4. (Optional) Handle ARIA attributes for accessibility.
+    // Handle ARIA attributes for accessibility.
     const isExpanded = dropdown.classList.contains('active');
     trigger.setAttribute('aria-expanded', isExpanded);
     dropdown.setAttribute('aria-hidden', !isExpanded);
@@ -36,14 +36,14 @@ function toggleDropdown(dataValue) {
 /* GALLERY */
 document.querySelector('.scroll-left').addEventListener('click', function() {
   document.querySelector('.horizontal-scroll').scrollBy({
-    left: -200, // Adjust this value based on item width
+    left: -200, // Can adjust this value based on item width
     behavior: 'smooth',
   });
 });
 
 document.querySelector('.scroll-right').addEventListener('click', function() {
   document.querySelector('.horizontal-scroll').scrollBy({
-    left: 200, // Adjust this value based on item width
+    left: 200, // Can adjust this value based on item width
     behavior: 'smooth',
   });
 });
