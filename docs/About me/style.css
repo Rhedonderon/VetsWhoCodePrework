@@ -423,10 +423,6 @@ footer nav a img {
 }
 
 @media screen and (max-width: 480px) {
-  h1 {
-    color: yellow;
-  }
-  
   #subcat_item-6 {
     background-position: center;
   }
@@ -527,17 +523,9 @@ footer nav a img {
   footer nav a img {
     font-size: 0.5em;
   }
-  
-  h1 {
-    color: red;
-  }
 }
 
 @media screen and (min-width: 601px) and (max-width: 768px) {
-  h1 {
-    color: green;
-  }
-  
   #subcat_item-6 {
     padding-bottom: 8em;
     background-size: 75% auto;
@@ -563,10 +551,6 @@ footer nav a img {
 }
 
 @media screen and (orientation: portrait) and (min-width: 769px) and (max-width: 992px) {
-  h1 {
-    color: darkorange;
-  }
-  
   .left-page {
     width: 76%;
     padding: 1em;
@@ -592,10 +576,6 @@ footer nav a img {
 }
 
 @media screen and (orientation: landscape) and (min-width: 769px) and (max-width: 992px) {
-  h1 {
-    color: purple;
-  }
-  
   #subcat_item-6 {
     background-size: 75%;
     background-position: center;
@@ -624,10 +604,6 @@ footer nav a img {
 }
 
 @media screen and (min-width: 993px) {
-  h1 {
-    color: blue;
-  }
-  
   #subcat_item-6 {
     width: 65%;
     height: 95vh;
