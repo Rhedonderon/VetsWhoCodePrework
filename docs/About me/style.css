@@ -304,7 +304,6 @@ span {
 }
 
 .left-page {
-  border: 1px solid red;
   grid-row: 1;
   grid-column: 1;
   min-height: 8em;
@@ -314,7 +313,6 @@ span {
 }
 
 .right-page {
-  border: 1px solid blue;
   grid-row: 1;
   grid-column: 2;
   position: relative;
@@ -324,7 +322,6 @@ span {
 }
 
 .right-page p, .right-page span {
-  border: 1px solid pink;
   position: relative;
 }
 
@@ -354,7 +351,6 @@ span {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  border: 5px solid pink;
 }
 
 .next-button {
